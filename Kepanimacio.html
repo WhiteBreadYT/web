@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kép és animáció</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<style>
+    .container{
+width:95% ;
+height: auto;
+padding: 20px;
+margin: 50px auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+    }
+    .box{
+        width: 470px;
+        margin: 0 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 1, 1);
+        transition:1.2s;
+    }
+   .box img{
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+    }
+ .box:hover{
+transform:scale(1.20);
+z-index: 2;
+ }
+</style>
+
+</head>
+<body id="last">
+    <header>
+        <div class="navigation">
+            <a href="index.html">Fő oldal</a>
+            <a href="keplink.html">Kép link</a>
+            <a href="lista.html">Lista</a>
+            <a href="orarend.html">Órarend</a>
+            <a href="urlap.html">Űrlap</a>
+            <a class="active" href="Kepanimacio.html">Kép(animáció)</a>
+        </div>
+          <div style="padding-left:16px">
+          </div>
+    </header>
+
+<h1>Képek Kissebb animációkkal</h1>
+
+<div class="container">
+        <div class="box">
+<img src="taj1.jpg" alt="Táj" width="300" height="300">
+    </div>
+    <div class="box">
+<img src="taj2.jpg" alt="Szebb Táj" width="300" height="300">
+    </div>
+    <div class="box">
+<img src="taj3.jpg" alt="Nem értem ha nem látod nem jön át úgy se" width="300" height="300">
+    </div>
+    <div class="box">
+<img src="taj4.jpg" alt="Kitartó vagy" width="300" height="300">
+    </div>
+</div>
+
+
+
+
+    <footer>
+        <p>Készítette : Kucsma Ulrik</p>
+        <a href="mailto:Kucsmau@kkszki.hu">Kucsmau@kkszki.hu</a>
+    </footer>
+</body>
+</html>
