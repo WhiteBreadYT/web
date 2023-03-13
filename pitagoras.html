@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitagoras számoló</title>
+    <link rel="stylesheet" href="pitagoras.css">
+</head>
+
+<body>
+    <h1 class="text">Pitagoras számláló csodagépezet</h1>
+    <img src="pitagoras.png" alt="Pitagoras Tétel">
+    <form>
+        <input type="text" id="A" oninput="szamol">
+        <input type="text" id="B" oninput="szamol">
+        <input type="text" id="C" oninput="szamol">
+    </form>
+
+    <script>
+        function szamol() {
+            if (A.value != 0 && B.value != 0) {
+                C.value = Math.sqrt((A.value * A.value) + (B.value * B.value));
+            }
+            if (A.value != 0 && B.value != 0) {
+                C.value = Math.sqrt((A.value * A.value) + (C.value * C.value));
+            }
+            if (A.value != 0 && B.value != 0) {
+                C.value = Math.sqrt((C.value * C.value) + (A.value * A.value));
+            }
+
+        }
+    </script>
+</body>
+
+</html>

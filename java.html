@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="java.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Büfés gombos geci</title>
+</head>
+<body onload="Refresh">
+
+<div>
+
+    <h1 id=h1>Büfé HEHEHE</h1>
+    <input type="button" value="-" onclick="kenyer_db.value = Number(kenyer_db.value) -1" >
+    <input type="text" id="kenyer_db" value="1" >
+    <input type="button" value="+" onclick="kenyer_db.value = Number(kenyer_db.value) +1" >
+    <input type="submit" value="KOSÁRBA" onclick="ad('darab', kenyer_db.value);Refresh()">
+
+</div>
+
+<p>KENYÉR ÁRA: <span id="kenyer_ar">...Ft</span></p>
+
+    <script>
+
+        var _kenyer = 550;
+        var _tej = 350;
+
+        function Refresh(){
+            document.getElementById('kenyer_ar').innerText = _kenyer * localStorage.getItem('darab') + "Ft";
+        }
+
+
+        function ad(nev,ertek){
+            localStorage.setItem(nev,ertek);
+        }
+    </script>
+</body>
+</html>
