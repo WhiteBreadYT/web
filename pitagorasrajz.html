@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitagoras számoló</title>
+    <link rel="stylesheet" href="pitagoras.css">
+    <style>
+        #haromszog {
+            border-top: 50px solid transparent;
+            border-left: 50px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <a href="index.html">Fő oldal</a>
+            <a href="keplink.html">Kép link</a>
+            <a href="lista.html">Lista</a>
+            <a href="orarend.html">Órarend</a>
+            <a href="urlap.html">Űrlap</a>
+            <a href="Kepanimacio.html">Kép(animáció)</a>
+            <a href="pitagoras.html">Pitagoras</a>
+            <a class="active" href="pitagorasrajz.html">Pitagoras</a>
+        </div>
+          <div style="padding-left:16px">
+          </div>
+ </header>
+    <h1 class="text">Pitagoras számláló csodagépezet</h1>
+    <header>A Csodagépezet használatát csak saját felelőségre ajánlott használni!</header>
+    <img src="pitagoras.png" alt="">
+
+    <form action="javascript:void(0)"></form>
+    <fieldset>
+        <legend>Add meg a háromszög befogóit</legend>
+        <label for="a_oldal">a oldal:</label>
+        a oldal:
+        <input type="number" name="sz" id="a_oldal" oninput="rajzol()">
+        <br>
+        <label for="a_oldal">b oldal:</label>
+        b oldal:
+        <input type="number" name="sz" id="b_oldal" oninput="rajzol()">
+        <label for="szin">SZÍN</label>
+        <input type="color" name="sz" id="szin" oninput="rajzol()">
+
+        <div id="haromszog"></div>
+
+    </fieldset>
+    <script>
+        function rajzol() {
+            const haromsz = document.getElementById('haromszog');
+            haromsz.style = "border-top:" + a_oldal.value + "px solid transparent;"
+                          + "border-left:" + b_oldal.value + "px solid" + szin.value + ";"
+        }        
+    </script>
+</body>
+
+</html>
